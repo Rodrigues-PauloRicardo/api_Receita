@@ -25,8 +25,9 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    width: 250px;
-} 
+    width: 100%;
+}
+
 #btn_pesquisar{
     border-radius: 5%;
     width: 100px;
@@ -41,6 +42,15 @@
     font-weight: bold;
     background-color: rgb(9, 15, 105);
     color: white;
+}
+.result{
+    display: none;
+    margin-top: 10px;
+    width: 250px;
+}
+.result_name, .result_cnpj, .result_uf, .result_municipio {
+    background-color: rgb(172, 169, 169);
+    width: 100%;
 }
 
 footer{
