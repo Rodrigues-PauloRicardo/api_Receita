@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receita Federal</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
@@ -14,13 +17,14 @@
         <img src="img/download.jpg" alt="">
 
         <div class="title">DIGITE O CNPJ Á SER CONSULTADO</div>        
-        
-        <input type="text" name="" id="input_cnpj" placeholder="Digite o CNPJ">
+        <form action="">
+        <input type="text" name="" id="input_cnpj" placeholder="Digite o CNPJ" pattern="\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}">
         
         <div class="btns">
-        <input type="button" value="PESQUISAR" id="btn_pesquisar">    
-        <input type="button" value="APAGAR"    id="btn_apagar">        
+        <input type="button" value="PESQUISAR" id="btn_pesquisar" onclick="button_pesquisar()">    
+        <input type="button" value="APAGAR"    id="btn_apagar" onclick="button_apagar()">        
         </div>
+        </form>
 
         <div class="result"></div>
 
